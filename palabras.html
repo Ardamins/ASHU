@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Palabras para Ti</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #ffe6f0, #fff);
+      font-family: 'Quicksand', sans-serif;
+      color: #5a2a60;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      margin-bottom: 20px;
+      animation: slideDown 1.5s ease-in-out;
+    }
+
+    .texto {
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      padding: 25px;
+      font-size: 1.2em;
+      line-height: 1.8;
+      box-shadow: 0 0 20px rgba(255, 192, 203, 0.5);
+      animation: zoomIn 1.8s ease;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 10px 25px;
+      background-color: #ff5cb8;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff3399;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .texto {
+        font-size: 1em;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mis Palabras para Ti</h1>
+
+  <div class="texto">
+    Mi amor, sé que a veces puedes aburrirte de mí, mi chica, pero no sabes cuánto te amo.  
+    Mi orgullo a veces es tan grande que no logro demostrártelo como tú quieres.  
+    Pero créeme, si algo tengo claro, es que te amo...  
+    A mi manera de ser, un poco torpe, un poco tonto, pero con el corazón más sincero que pueda tener.  
+
+    Soy capaz de dar mi vida por ti.  
+    Te amo con cada parte de mi alma, pero a veces no soy capaz de expresarlo como tú deseas.  
+    Lo sé... soy un estúpido a veces, y espero que puedas entenderme.  
+
+    Te amo mucho, muchísimo, tanto que no cabe en estas palabras.  
+    Me duele no poder demostrarlo con hechos a veces, pero te juro que estoy intentando mejorar.  
+    El tiempo me hizo madurar, y aunque aún cometo errores, cada día lucho por ser mejor para ti.  
+
+    Si hay algo que me acelera el corazón, es verte sonreír.  
+    Eres lo mejor que me ha pasado.  
+    Te amo, mi niña, mi lloroncita fuerte, mi amor.  
+    No te vayas nunca de mi vida.
+  </div>
+
+  <button onclick="location.href='bienvenido.html'">⬅ Regresar</button>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Música y Carta - Ladybug</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://i.pinimg.com/736x/87/19/c4/8719c4e6fe9d6bb6b0031f5970de64b0.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      text-align: center;
+    }
+
+    header {
+      background: rgba(255, 0, 102, 0.85);
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      font-size: 24px;
+      font-weight: bold;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #fff, 0 0 10px #ff4081; }
+      to { text-shadow: 0 0 10px #fff, 0 0 20px #ff0055; }
+    }
+
+    .media-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    iframe, audio, video {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255,0,102,0.6);
+    }
+
+    .carta {
+      background: rgba(0, 0, 0, 0.7);
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 800px;
+      font-size: 20px;
+      line-height: 1.6;
+      animation: fadeInUp 2s ease;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .volver {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 12px 24px;
+      background-color: rgba(255, 0, 102, 0.9);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0 0 10px rgba(255,0,102,0.5);
+      transition: background 0.3s;
+    }
+
+    .volver:hover {
+      background-color: rgba(255, 0, 102, 1);
+    }
+
+    @media (max-width: 600px) {
+      .carta {
+        font-size: 18px;
+        padding: 20px;
+      }
+
+      .volver {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>💖 Música y Carta para Mi Amor 💖</header>
+
+  <div class="media-container">
+    <!-- Video de amor -->
+    <video width="100%" controls autoplay>
+      <source src="Video de WhatsApp 2025-08-02 a las 02.09.16_29e7dd3b.mp4" type="video/mp4">
+      Tu navegador no soporta la etiqueta de video.
+    </video>
+
+    <!-- Música de fondo -->
+    <audio controls autoplay loop>
+      <source src="Goo Goo Dolls  Iris [Official Music Video] [4K Remaster].mp3" type="audio/mpeg">
+      Tu navegador no soporta audio HTML5.
+    </audio>
+  </div>
+
+  <div class="carta">
+    <p>Mi amor hermosa,</p>
+    <p>Llevamos 5 meses llenos de risas, momentos, desafíos y sobre todo, mucho amor. A pesar de las pequeñas peleas que podamos tener, sé con todo mi corazón que nada nos va a separar. Porque nuestro amor es más fuerte que cualquier discusión, más brillante que cualquier sombra.</p>
+    <p>Te amo con cada parte de mí, mi lloroncita preciosa. Sé lo fuerte que eres, aunque a veces llores, aunque a veces dudes, yo estoy aquí para recordarte lo increíblemente valiente, hermosa y única que eres.</p>
+    <p>Gracias por existir, por regalarme tus días, por compartir tus pensamientos, tus besos, tus miradas y hasta tus enojitos. Todo eso me hace amarte más.</p>
+    <p>Siempre serás mi chica, mi milagro, mi destino. ❤️</p>
+    <p>Con todo mi amor 💌</p>
+  </div>
+
+  <!-- Botón de regreso -->
+  <a class="volver" href="bienvenido.html">← Volver a Bienvenido</a>
+</body>
+</html>

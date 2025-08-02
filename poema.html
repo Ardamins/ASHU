@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poema para ti, mi amor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: radial-gradient(circle at center, #fbd3e9 0%, #bb377d 100%);
+      color: #fff;
+      font-family: 'Libre Baskerville', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+      animation: fadeIn 3s ease;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #fff8f0;
+      margin-bottom: 10px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    .poema {
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      padding: 25px;
+      max-width: 800px;
+      text-align: center;
+      font-size: 1.2em;
+      line-height: 1.8;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 0 20px #ff69b4;
+      animation: slideIn 2s ease-out;
+    }
+
+    .poema p {
+      margin-bottom: 15px;
+    }
+
+    .btn-regresar {
+      margin-top: 30px;
+      background-color: #ff4f81;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .btn-regresar:hover {
+      background-color: #e0436d;
+      transform: scale(1.05);
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff99cc, 0 0 30px #ff66b2;
+      }
+      to {
+        text-shadow: 0 0 20px #ff99cc, 0 0 30px #ff66b2, 0 0 40px #ff3385;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .poema {
+        font-size: 1em;
+        padding: 15px;
+      }
+
+      .btn-regresar {
+        padding: 10px 20px;
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Poema para ti, mi amor</h1>
+  <div class="poema">
+     <h1>Para Ti, Mi Amor</h1>
+
+    <p>No quiero que el mundo me vea,<br>
+    porque no creo que lo entenderían.<br>
+    Cuando todo se rompe, quiero que tú estés ahí,<br>
+    para ver quién soy realmente.</p>
+
+    <p>Y todo parece una película,<br>
+    tú eres la estrella que más brilla.<br>
+    Prefiero estar contigo en la oscuridad,<br>
+    que solo en la luz.</p>
+
+    <p>Disculpa si a veces me comporto como un tonto,<br>
+    si no me entiendes aún... sé que lo harás con el tiempo.<br>
+    Porque sé que eres fuerte, porque sé que me comprendes.<br>
+    Porque te amo... pero te amo a mi manera.</p>
+
+    <p>Mi ego a veces me gana, pero no me gana<br>
+    cuando se trata de dejarte de amar.<br>
+    Mi corazón se acelera al verte.<br>
+    Me encantas, mi chica, mi lloroncita.</p>
+
+    <p>Disculpa si soy como soy...<br>
+    el tiempo me hizo madurar, aunque aún tengo errores.<br>
+    A veces fui un estúpido, pero aprendí<br>
+    que nadie como tú... nadie me hace sentir así.</p>
+
+    <p>Te amo.<br>
+    Aunque peleemos, aunque dudemos,<br>
+    aunque el mundo intente separarnos.<br>
+    Te amo en cada canción, en cada silencio, en cada poema.</p>
+  </div>
+
+  <a href="bienvenido.html" class="btn-regresar">← Regresar</a>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Amor ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #ff0055, #ff77aa);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      color: white;
+    }
+
+    .login-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px 25px;
+      border-radius: 25px;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.3em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 20px;
+      font-size: 1em;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 20px;
+      background-color: #ff006e;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff4f8f;
+    }
+
+    .error {
+      margin-top: 10px;
+      color: yellow;
+      font-weight: bold;
+      display: none;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* Responsive extra */
+    @media screen and (max-width: 400px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      input,
+      button {
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h1>Bienvenido amor ❤️</h1>
+    <p>Ingresa para ver tu regalo secreto 🐞</p>
+    <form onsubmit="return validarLogin()">
+      <input type="email" id="correo" placeholder="Correo" required />
+      <input type="password" id="clave" placeholder="Contraseña" required />
+      <button type="submit">Entrar</button>
+      <div class="error" id="mensajeError">Correo o contraseña incorrectos 😢</div>
+    </form>
+  </div>
+
+  <script>
+    function validarLogin() {
+      const correo = document.getElementById('correo').value;
+      const clave = document.getElementById('clave').value;
+      const mensajeError = document.getElementById('mensajeError');
+
+      if (correo === 'ashu@gmail.com' && clave === 'ashu246') {
+        window.location.href = 'bienvenido.html';
+        return false;
+      } else {
+        mensajeError.style.display = 'block';
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>
